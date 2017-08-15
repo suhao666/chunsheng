@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>index</title>
+<link href="css/css.css" rel="stylesheet">
+</head>
+<script  type="text/javascript">
+//设为首页
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+               
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+//收藏本站
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<body>
+     
+ <div class="header">
+     <div class="header1 gwidth">
+         <p>网站公告：热烈祝贺雄县春生塑料包装厂网站官网正式上线</p>
+         <ul class="clearfix">
+               <li>
+                  <a href="javascript:;">设为首页</a>
+               </li>
+               <li>
+                  <a href="javascript:;">加入收藏</a>
+               </li>
+               <li>
+                  <a href="javascript:;">联系我们</a>
+               </li>
+         </ul>
+     </div>
+ </div>
+ 
+ 
+ <div class="nav">
+    <div class="nav1 gwidth clearfix">
+       <div class="img"><img src="images/logo.png" alt=""></div>
+       <ul class="ul1 clearfix">
+          <li><a href="index.html">网站首页<br><h5>HOME</h5></a></li>
+          <li><a href="about us.html">关于我们<br><h5>ABOUT US</h5></a></li>
+          <li><a href="news.html">新闻资讯<br><h5>NEWS</h5></a></li>
+          <li><a href="chanpin.html">产品展示<br><h5>PRODUCTS</h5></a></li>
+          <li><a href="honor.html">资质荣誉<br><h5>HONOR</h5></a></li>
+          <li><a href="message.html">请您留言<br><h5>MESSAGE</h5></a></li>
+          <li style="margin-right:0;"><a href="contact us.html">联系我们<br><h5>CONTACT US</h5></a></li>
+       </ul>
+    </div>
+ </div>
+ 
+ 
+ <div class="banner">
+     <img src="images/banner.png" alt="">
+ </div>
+ 
+ 
+ 
+ <div class="a">
+     <div class="a1 gwidth">
+        <img class="img1" src="images/tianqi.png" alt="">
+        <div class="a11">
+            <h3>站内公告：<span>热烈祝贺雄县春生塑料包装厂官网正式上线！</span></h3>
+            
+            <form class="er" action="abc.php" method="post" name="search" id="">
+               <input type="text" name="" value="请输入搜索关键词" style=" width:394px; height:42px; background-color:#FFF; border:none; padding-left:9px; font-size:12px; color:#000; float:left; outline:none;"><!--
+            
+              --><input class="w" type="submit" value="" style=" background-color:#FFF; border:none; height:42px; width:60px; float:left; margin-left:2px; outline:none;">
+            </form>
+            <a href="javascript:;"><img class="img2" src="images/fangdajing.png" alt=""></a>
+        </div>
+        <a href="javascript:;"><img class="img3" src="images/企鹅.png" alt=""></a>
+     </div>
+ </div>
+ 
+ 
+ 
+ 
+ <div class="b gwidth">
+     <div class="b1">
+         <h3>产品展示<span>PRODUCT</span></h3>
+     </div>
+     <ul class="ul1 clearfix">
+        <li><a href="javascript:;">真空包装袋</a></li>
+        <li><a href="javascript:;">背心袋</a></li>
+        <li><a href="javascript:;">无纺布袋</a></li>
+        <li><a href="javascript:;">塑料包装袋</a></li>
+        <li><a href="javascript:;">更多分类</a></li>
+     </ul>
+     <ul class="ul2 clearfix">
+        <li><a href="javascript:;"><img src="images/a.gif" alt=""></a></li>
+        <li><a href="javascript:;"><img src="images/b.gif" alt=""></a></li>
+        <li><a href="javascript:;"><img src="images/c.gif" alt=""></a></li>
+        <li style="border-right:1px solid #999;"><a href="javascript:;"><img src="images/d.gif" alt=""></a></li>
+        <li style="border-bottom:1px solid #999;"><a href="javascript:;"><img src="images/e.gif" alt=""></a></li>
+        <li style="border-bottom:1px solid #999;"><a href="javascript:;"><img src="images/f.gif" alt=""></a></li>
+        <li style="border-bottom:1px solid #999;"><a href="javascript:;"><img src="images/g.gif" alt=""></a></li>
+        <li style="border-right:1px solid #999; border-bottom:1px solid #999;"><a href="javascript:;"><img src="images/h.gif" alt=""></a></li>
+     </ul>
+ </div>
+ 
+ 
+ 
+ 
+ <div class="c">
+   <div class="c1 gwidth">
+     <h3>关于我们<span>ABOUT US</span></h3>
+     <div class="zi">
+        <p>雄县春生塑料包装厂：专业生产塑料包装袋，复合包装袋，购物袋，无纺布袋、环保袋、无纺布手提袋、无纺布平口袋、覆膜无纺布袋，彩印无纺布袋，无纺布环保袋，无纺布围裙，广告围裙制作厂家。积累了从进口原料、产品设计、成品生产、品质鉴定、到物流运输的整套完善的管理经验，形成一套健全的供销网络，为每一位客户最大限度节约成本。我们始终坚持以做高品质环保袋，环保制品为理念，逐渐培养出一支专业的设计和制作团队，能根据客户的不同需求进行个性化设计与生产。</p>
+     </div>
+   </div>
+ </div>
+ 
+ 
+ 
+ 
+ <div class="d gwidth">
+     <div class="b1">
+         <h3>成功案例<span>CASE</span></h3>
+     </div>
+     <ul class="ul2 clearfix">
+        <li><a href="javascript:;"><img src="images/a.gif" alt=""></a></li>
+        <li><a href="javascript:;"><img src="images/b.gif" alt=""></a></li>
+        <li><a href="javascript:;"><img src="images/c.gif" alt=""></a></li>
+        <li style="border-right:1px solid #999;"><a href="javascript:;"><img src="images/d.gif" alt=""></a></li>
+     </ul>
+ </div>
+ 
+ 
+ 
+ 
+ <div class="e">
+    <div class="ee gwidth">
+       <div class="e1">
+         <h3><img src="images/dayu.png" alt="">联系我们</h3>
+         <img src="images/xietiao.png" alt="">
+         <p>
+           雄县春生塑料包装厂<br>联系人：高强<br>手机号：18031204946<br>电   话：0312- 5565582<br>传   真：0312-5565582<br>邮   箱：1240796005@qq.com<br>地   址：河北省保定市雄县古城路中段路东
+         </p>
+       </div>
+       
+       
+       <div class="e2">
+          <h3><img src="images/new.png" alt=""><a href="javascript:;">最新资讯</a></h3>
+          <ul class="ul3 clearfix">
+             <li style="border-right:1px dashed #cccccc; border-bottom:1px dashed #cccccc;">
+                <img src="images/bayue.png" alt="">
+                <h4><a href="javascript:;">中国水泵网模式整合推陈出新</a></h4>
+                <p><a href="javascript:;">宏观经济政策的持续驱动及下游需求市场
+的有效拉动使国内水泵行业以与日俱增的
+市场需求量...</a></p>
+             </li>
+             
+             <li style="border-bottom:1px dashed #cccccc;">
+                <img src="images/bayue.png" alt="">
+                <h4><a href="javascript:;">中国水泵网模式整合推陈出新</a></h4>
+                <p><a href="javascript:;">宏观经济政策的持续驱动及下游需求市场
+的有效拉动使国内水泵行业以与日俱增的
+市场需求量...</a></p>
+             </li>
+             
+             <li style="border-right:1px dashed #cccccc;">
+                <img src="images/bayue.png" alt="">
+                <h4><a href="javascript:;">中国水泵网模式整合推陈出新</a></h4>
+                <p><a href="javascript:;">宏观经济政策的持续驱动及下游需求市场
+的有效拉动使国内水泵行业以与日俱增的
+市场需求量...</a></p>
+             </li>
+             
+             <li>
+                <img src="images/bayue.png" alt="">
+                <h4><a href="javascript:;">中国水泵网模式整合推陈出新</a></h4>
+                <p><a href="javascript:;">宏观经济政策的持续驱动及下游需求市场
+的有效拉动使国内水泵行业以与日俱增的
+市场需求量...</a></p>
+             </li>
+          </ul>
+       </div>
+       
+    </div>
+ </div>
+ 
+ 
+ 
+ 
+ <div class="di">
+    <div class="dii gwidth">
+       <p>友情链接：<a href="javascript:;">雄县春生塑料包装厂</a></p>
+       <h3><a href="javascript:;">TOP</a></h3>
+    </div>
+ </div>
+ 
+ <div class="z gwidth">
+     <ul class="ul1 clearfix">
+          <li><a href="index.html">网站首页</a><span>|</span></li>
+          <li><a href="about us.html">关于我们</a><span>|</span></li>
+          <li><a href="news.html">新闻资讯</a><span>|</span></li>
+          <li><a href="chanpin.html">产品展示</a><span>|</span></li>
+          <li><a href="honor.html">资质荣誉</a><span>|</span></li>
+          <li><a href="message.html">请您留言</a><span>|</span></li>
+          <li><a href="contact us.html">联系我们</a></li>
+     </ul>
+     <p>版权所有：雄县春生塑料包装厂　　技术支持：小象科技　　ICP备案编号： 正在进行备案</p>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="css/css.css" rel="stylesheet">
+<title>ABOUT</title>
+</head>
+<script  type="text/javascript">
+//设为首页
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+               
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+//收藏本站
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+<body>
+     
+ <div class="header">
+     <div class="header1 gwidth">
+         <p>网站公告：热烈祝贺雄县春生塑料包装厂网站官网正式上线</p>
+         <ul class="clearfix">
+               <li>
+                  <a href="javascript:;")>设为首页</a>
+               </li>
+               <li>
+                  <a href="javascript:;">加入收藏</a>
+               </li>
+               <li>
+                  <a href="">联系我们</a>
+               </li>
+         </ul>
+     </div>
+ </div>
+ 
+ 
+ <div class="nav">
+    <div class="nav1 gwidth">
+       <div class="img"><img src="images/logo.png" alt=""></div>
+       <ul class="ul1 clearfix">
+          <li><a href="index.html">网站首页<br><h5>HOME</h5></a></li>
+          <li><a href="about us.html">关于我们<br><h5>ABOUT US</h5></a></li>
+          <li><a href="news.html">新闻资讯<br><h5>NEWS</h5></a></li>
+          <li><a href="chanpin.html">产品展示<br><h5>PRODUCTS</h5></a></li>
+          <li><a href="honor.html">资质荣誉<br><h5>HONOR</h5></a></li>
+          <li><a href="message.html">请您留言<br><h5>MESSAGE</h5></a></li>
+          <li style="margin-right:0;"><a href="contact us.html">联系我们<br><h5>CONTACT US</h5></a></li>
+       </ul>
+    </div>
+ </div>
+ 
+ 
+ <div class="banner">
+     <img src="images/banner.png" alt="">
+ </div>
+ 
+ 
+ 
+ <div class="a">
+     <div class="a1 gwidth">
+        <img class="img1" src="images/tianqi.png" alt="">
+        <div class="a11">
+            <h3>站内公告：<span>热烈祝贺雄县春生塑料包装厂官网正式上线！</span></h3>
+            
+            <form class="er" action="abc.php" method="post" name="search" id="">
+               <input type="text" name="" value="请输入搜索关键词" style=" width:394px; height:42px; background-color:#FFF; border:none; padding-left:9px; font-size:12px; color:#000; float:left; outline:none;"><!--
+            
+              --><input class="w" type="submit" value="" style=" background-color:#FFF; border:none; height:42px; width:60px; float:left; margin-left:2px; outline:none;">
+            </form>
+            <a href=""><img class="img2" src="images/fangdajing.png" alt=""></a>
+        </div>
+        <a href=""><img class="img3" src="images/企鹅.png" alt=""></a>
+     </div>
+ </div>
+ 
+ 
+
+
+
+<div class="guan">
+ <div class="gy gwidth">
+    <div class="left">
+       <h3 class="h3a">产品展示分类<br><span>CATEGORIES</span></h3>
+       <div class="s">
+           <ul class="ula">
+              <li><a href="">mpp电缆保护管</a></li>
+              <li><a href="">PE给水管</a></li>
+              <li><a href="">pvc-c电力管</a></li>
+              <li><a href="">pvc给水管</a></li>
+              <li><a href="">玻璃钢电缆保护管</a></li>
+              <li><a href="">多孔梅花管</a></li>
+              <li><a href="">硅芯管</a></li>
+              <li><a href="">集束管</a></li>
+              <li><a href="">农田灌溉管</a></li>
+              <li><a href="">热浸塑钢管</a></li>
+              <li><a href="">三色光缆管</a></li>
+              <li><a href="">碳素螺纹护套管</a></li>
+              <li><a href="">栅格管</a></li>
+           </ul>
+       </div>
+       <div class="s1">
+          <h3 class="h3b">联系我们<span>CONTACT US</span></h3> 
+          <p>
+            <span style="font-weight:bold;">河北鑫永顺塑胶制品</span><br>联系人：许春栋<br>手　机：1823042855<br>　　　　13730161328<br>地　址：河北保定雄县昝岗高辛庄工
+业区（昝岗汽车站往北1公里路西）
+          </p>  
+       </div>
+    </div>
+    
+    <div class="right">    
+       <div class="shang">
+           <h3 class="h3c">关于我们<span>ABOUT US</span></h3>
+           <p>当前位置：首页>关于我们</p>
+       </div>
+       <a href=""><img class="imga" src="images/guanyu.png" alt=""></a>
+       <p><a href=""><span style="font-weight:bold;">雄县昝岗创硕塑料制品厂</span>制品位于京、津、石经济带中心，南临白洋淀，东临京九铁路，交通便利。主导产品有：<span class="span1">CPVC电力管材、玻璃钢管材、MPP电力管</span>等。销售网络遍及东北、华北、华中、华南、西北等地区，产品应用于多项国家重点工程，赢得施工单位和使用单位的肯定。<br>
+ 　　我们恪守"诚信为本、锐意创新、互利双赢"的信念，以优质产品服务于千家万户和社会各行各业。客户需求是我们不懈的追求！<br>
+ 　　雄县昝岗创硕塑料制品厂主打产品种类：<span class="span1">CPVC电力管材、玻璃钢管材、MPP电力管</span>！</a></p>
+    </div>
+ </div>
+</div> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="di">
+    <div class="dii gwidth">
+       <p>友情链接：<a href="">雄县春生塑料包装厂</a></p>
+       <h3><a href="">TOP</a></h3>
+    </div>
+ </div>
+ 
+ <div class="z gwidth">
+     <ul class="ul1 clearfix">
+          <li><a href="index.html">网站首页</a><span>|</span></li>
+          <li><a href="about us.html">关于我们</a><span>|</span></li>
+          <li><a href="news.html">新闻资讯</a><span>|</span></li>
+          <li><a href="chanpin.html">产品展示</a><span>|</span></li>
+          <li><a href="honor.html">资质荣誉</a><span>|</span></li>
+          <li><a href="message.html">请您留言</a><span>|</span></li>
+          <li><a href="contact us.html">联系我们</a></li>
+     </ul>
+     <p>版权所有：雄县春生塑料包装厂　　技术支持：小象科技　　ICP备案编号： 正在进行备案</p>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>
